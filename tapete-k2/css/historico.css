@@ -1,0 +1,75 @@
+.historico-container {
+  width: 95%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+.historico-container table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.historico-container th,
+.historico-container td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.historico-container th {
+  background-color: #f2f2f2;
+}
+
+.btn-salvar {
+    margin-top: 15px;
+    background-color: #28a745; /* verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.btn-salvar:hover {
+    background-color: #218838; /* tom mais escuro no hover */
+    transform: scale(1.02);
+}
+
+.btn-apagar-tudo {
+  margin-top: 20px;
+  background-color: #dc3545; /* vermelho */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.btn-apagar-tudo:hover {
+  background-color: #c82333;
+  transform: scale(1.02);
+}
+
+.btn-excluir-linha {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #e74c3c;
+}

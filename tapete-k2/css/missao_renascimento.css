@@ -1,0 +1,73 @@
+/* Área da missão no tapete */
+.elemento-tapete {
+  position: absolute;
+  top: 94.8%;
+  left: 53.6%;
+  width: 28%;
+  aspect-ratio: 1 / 1;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  overflow: hidden;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 50%,
+    0% 50%
+  );
+}
+
+/* Semicírculo visual */
+.semicirculo-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 270deg,
+    black 0deg 30deg,
+    blue 30deg 150deg,
+    green 150deg 360deg
+  );
+}
+
+#haste {
+  position: absolute;
+  width: 5%;
+  height: 45%;
+  top: -0.5%;
+  left: 50%;
+  transform: translateX(-50%) rotate(-90deg);
+  transform-origin: bottom center;
+  background: linear-gradient(to bottom, #ff4d4d, #990000);
+  border-radius: 8px;
+  border: 2px solid #fff;
+  box-shadow:
+    0 0 4px rgba(255, 0, 0, 0.6),
+    0 0 12px rgba(255, 0, 0, 0.2);
+  cursor: grab;
+  transition: box-shadow 0.2s, transform 0.1s;
+  z-index: 9999;
+  
+}
+
+#haste:hover {
+  box-shadow:
+    0 0 6px rgba(255, 255, 255, 0.8),
+    0 0 16px rgba(255, 0, 0, 0.5);
+}
+
+#haste.grabbing {
+  cursor: grabbing;
+  box-shadow:
+    0 0 8px rgba(255, 255, 255, 0.9),
+    0 0 20px rgba(255, 0, 0, 0.7);
+}
+
+#haste {
+  user-select: none;          /* impede seleção de texto */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  outline: none;              /* impede o contorno de foco */
+}
+

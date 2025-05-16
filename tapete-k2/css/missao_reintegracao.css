@@ -1,0 +1,69 @@
+
+/* Estilo dos quadrados fixos */
+.drop-area {
+    position: absolute;
+    width: 8.3%;
+    height: 8.3%;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilo dos quadrados específicos */
+#onca {
+  
+        background-color: rgba(46, 204, 64, 0.7);
+    border: 2px solid #218C28; /* Verde mais escuro */
+    box-shadow: 0 0 5px rgba(33, 140, 40, 0.5);
+}
+
+#macaco {
+    background-color: rgba(170, 170, 170, 0.7);
+    border: 2px solid #7A7A7A; /* Cinza mais escuro */
+    box-shadow: 0 0 5px rgba(122, 122, 122, 0.5);
+}
+
+#tamandua {
+  background-color: rgba(0, 116, 217, 0.7);
+    border: 2px solid #00509E; /* Azul mais escuro */
+    box-shadow: 0 0 5px rgba(0, 80, 158, 0.5);
+}
+
+/* Estilo dos animais */
+.animal {
+    position: relative;
+    width: 77%;
+    height: 77%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: grab;
+    user-select: none;
+    z-index: 10;
+    font-size: 130%;
+}
+
+.animal:active {
+    cursor: grabbing;
+}
+
+/* Estilo das áreas de destino */
+.destino {
+    position: absolute;
+    width: 11.7%;
+    height: 11%;
+    border: 3px solid #000000; /* Contorno preto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 12px;
+    border-radius: 17px;
+    z-index: 5;
+}

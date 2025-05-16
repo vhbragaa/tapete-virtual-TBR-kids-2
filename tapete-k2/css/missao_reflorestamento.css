@@ -1,0 +1,88 @@
+/* Cobertura da área de reflorestamento */
+.reflorestamento-cover {
+    position: absolute;
+    width: 20%; /* Ajuste essa largura para cobrir perfeitamente */
+    height: 20%; /* Ajuste essa altura para cobrir perfeitamente */
+    background-color: rgba(34, 139, 34, 1); /* Verde com transparência */
+    border: 3px solid #000000; /* Contorno preto */
+    z-index: 5;
+    border-radius: 5px;
+}
+
+/* Botão estiloso sobre o quadrado verde */
+#liberar-sementes {
+    position: absolute;
+    top: -12%; /* Ajuste para ficar acima da área verde */
+    left: 0%; /* Centralizado em relação ao quadrado */
+    background-color: #2ECC71;
+    color: white;
+    border: none;
+    padding: 2% 4%;
+    border-radius: 4%;
+    font-size: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#liberar-sementes:hover {
+    background-color: #27AE60;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#liberar-sementes:active {
+    transform: translateY(1px);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilo das sementes */
+.semente {
+    width: 2%;
+    height: 2%;
+    background-color: #8B4513;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    cursor: grab;
+    border: 2px solid #000;
+}
+
+
+.area-plantio {
+    position: absolute;
+    z-index: 5;
+    transform: translate(50%, -50%);
+}
+
+/* Botão de Reset estiloso */
+#resetar-pontuacao {
+    margin-top: 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+#resetar-pontuacao:hover {
+    background-color: #c0392b;
+    transform: translateY(-1px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#resetar-pontuacao:active {
+    transform: translateY(1px);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+

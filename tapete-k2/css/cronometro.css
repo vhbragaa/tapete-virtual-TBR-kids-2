@@ -1,0 +1,69 @@
+.cronometro-container {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  z-index: 20000;
+}
+
+
+#cronometro-display {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 20000;
+}
+
+
+.cronometro-botoes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  z-index: 20000;
+}
+
+.cronometro-botoes button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.cronometro-botoes button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.cronometro-botoes button:active {
+  transform: translateY(1px);
+}
+
+.contagem-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 10vw;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  transition: opacity 0.5s ease;
+}
+
+.contagem-overlay.hidden {
+  display: none;
+}
+

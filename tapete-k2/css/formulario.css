@@ -1,0 +1,85 @@
+#formulario-rapido {
+  flex: 1;
+  max-width: 500px;  /* era 300px */
+  width: 20%;
+  background: #f9f9f9;
+  border: 2px dashed #ccc;
+  padding: 20px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  margin-top: 0;
+  text-align: center; /* centraliza o texto */
+}
+
+#formulario-rapido h3 {
+  font-size: 2rem;   /* aumenta o tamanho */
+  font-weight: bold;
+  text-align: center;  /* centraliza se ainda não estiver */
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+
+#formulario-rapido fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.missao {
+  margin-bottom: 10px;
+}
+
+.missao-toggle {
+  width: 100%;
+  text-align: left;
+  background-color: #eaeaea;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s;
+  text-align: center;
+}
+
+.missao-toggle:hover {
+  background-color: #dcdcdc;
+}
+
+.missao-conteudo {
+  padding: 10px;
+  border: 1px dashed #ccc;
+  border-radius: 6px;
+  background: #f9f9f9;
+  margin-top: 5px;
+  display: none;
+  text-align: center;
+}
+
+.missao.ativa .missao-conteudo {
+  display: block;
+}
+
+.missao-conteudo {
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+  max-height: 0;
+}
+.missao.ativa .missao-conteudo {
+  max-height: 400px; /* ajuste conforme conteúdo */
+}
+
+.missao-conteudo input[type="number"] {
+  margin: 5px auto;
+  display: block;
+  text-align: center;
+}
+
+.missao.ativa .missao-toggle {
+  background-color: #d0ebff;
+  font-weight: bold;
+}
